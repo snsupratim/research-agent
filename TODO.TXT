@@ -1,0 +1,15 @@
+1. SETUP ENVIRONMENT
+
+a. python -m venv .venv
+.venv/Scripts/activate
+
+// used here
+b. uv venv 
+.venv/Scripts/activate
+
+2. install intitial library 
+3. run the application
+4. do a health check
+
+router = APIRouter(tags=["reports"])
+limiter = Limiter(key_func=get_remote_address, default_limits=["100/hour"])
